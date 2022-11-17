@@ -1,4 +1,4 @@
-module PCReg#(
+module register#(
     parameter WIDTH = 8
 )(
     input   logic   clk,
