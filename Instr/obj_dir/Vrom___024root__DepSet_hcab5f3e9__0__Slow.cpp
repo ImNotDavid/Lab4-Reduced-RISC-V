@@ -27,14 +27,17 @@ VL_ATTR_COLD void Vrom___024root___eval_initial(Vrom___024root* vlSelf) {
     Vrom__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vrom___024root___eval_initial\n"); );
     // Body
-    vlSelf->__Vclklast__TOP__clk = vlSelf->clk;
     Vrom___024root___initial__TOP__0(vlSelf);
 }
+
+void Vrom___024root___combo__TOP__0(Vrom___024root* vlSelf);
 
 VL_ATTR_COLD void Vrom___024root___eval_settle(Vrom___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vrom__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vrom___024root___eval_settle\n"); );
+    // Body
+    Vrom___024root___combo__TOP__0(vlSelf);
 }
 
 VL_ATTR_COLD void Vrom___024root___final(Vrom___024root* vlSelf) {

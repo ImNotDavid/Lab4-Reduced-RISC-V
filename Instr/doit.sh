@@ -12,3 +12,6 @@ make -j -C obj_dir/ -f Vrom.mk Vrom
 
 # run executable simulation file
 obj_dir/Vrom
+
+# open waveform in gtkwave
+gtkwave rom.vcd

@@ -14,7 +14,6 @@ module rom #(
             $readmemh("program.mem", rom_array);
     end;
 
-    always @(posedge clk)
-        dout = rom_array[addr];
+    assign dout = rom_array[addr];
 
 endmodule
