@@ -1,5 +1,5 @@
 module PC #(
-    parameter WIDTH = 8
+    parameter WIDTH = 32
 ) (
     input   logic [WIDTH-1:0]   ImmOp,
     input   logic               clk,
@@ -11,7 +11,7 @@ module PC #(
 logic [WIDTH-1:0] branch_PC;
 logic [WIDTH-1:0] current_PC;
 
-register PCReg(
+register PCReg (
     .PC(current_PC),
     .next_PC(branch_PC),
     .clk(clk),

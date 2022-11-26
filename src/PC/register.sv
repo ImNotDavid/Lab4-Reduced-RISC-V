@@ -1,5 +1,5 @@
 module register#(
-    parameter WIDTH = 8
+    parameter WIDTH = 32
 )(
     input   logic   clk,
     input   logic   rst,

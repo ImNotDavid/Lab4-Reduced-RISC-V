@@ -64,7 +64,7 @@ int main(int argc, char **argv, char **env){
     // initialize simulation inputs
     int jump_clock = rand() % 3000;
     int jmp_location = rand() % 4294967296; //Random 32 bit address
-    top->clk = 1;
+    top->clk = 0;
     top->rst = 0;
     top->ImmOp = jmp_location;
     top->jmp_sel = 0;
