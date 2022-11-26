@@ -85,5 +85,8 @@ int main(int argc, char **argv, char **env){
         }
     }
     tfp->close();
-    exit(0);
+    if(!error){
+        std::cout << "[PASS]" << std::endl;
+    }
+    exit(error ? -1 : 0);
 }

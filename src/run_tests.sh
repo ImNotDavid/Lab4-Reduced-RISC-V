@@ -8,16 +8,22 @@ tests=(`echo $tests | tr '\n' ' '`)
 echo "===== TESTING SUITE ====="
 echo "No of tests found: ${#tests[@]}"
 
+failed=false
+
 for test in $tests
 do
     result=$(sh $test)
-    if [ "$result" != "PASS" ]
+    if [ "$result" != "[PASS]" ]
     then
         echo "FAILED ON $test"
         echo "$result"
         failed=true
     fi
 done
+if [ !failed ] 
+then
+    echo "ALL UNIT TESTS PASSED"
+fi
 
 # if $f
 
